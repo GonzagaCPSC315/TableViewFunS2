@@ -15,6 +15,7 @@
 		4578E9A42540B3C50086D8AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4578E9A22540B3C50086D8AB /* LaunchScreen.storyboard */; };
 		4578E9AC2540B67E0086D8AB /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578E9AB2540B67E0086D8AB /* Dog.swift */; };
 		4578E9B4254353D40086D8AB /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578E9B3254353D40086D8AB /* DogTableViewCell.swift */; };
+		45C1B4522549EC5800DB065E /* DogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C1B4512549EC5800DB065E /* DogDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4578E9A52540B3C50086D8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4578E9AB2540B67E0086D8AB /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		4578E9B3254353D40086D8AB /* DogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
+		45C1B4512549EC5800DB065E /* DogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4578E9A52540B3C50086D8AB /* Info.plist */,
 				4578E9AB2540B67E0086D8AB /* Dog.swift */,
 				4578E9B3254353D40086D8AB /* DogTableViewCell.swift */,
+				45C1B4512549EC5800DB065E /* DogDetailViewController.swift */,
 			);
 			path = TableViewFunS2;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				4578E9982540B3C30086D8AB /* AppDelegate.swift in Sources */,
 				4578E9B4254353D40086D8AB /* DogTableViewCell.swift in Sources */,
 				4578E9AC2540B67E0086D8AB /* Dog.swift in Sources */,
+				45C1B4522549EC5800DB065E /* DogDetailViewController.swift in Sources */,
 				4578E99A2540B3C30086D8AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -54,9 +54,14 @@
                                         <connections>
                                             <outlet property="breedLabel" destination="y5R-U9-l3c" id="I2M-Pl-EzN"/>
                                             <outlet property="nameLabel" destination="5cp-lR-kX1" id="Sxc-Ww-MkX"/>
+                                            <segue destination="ONf-na-gDM" kind="show" identifier="DetailSegue" id="Q9G-0K-MWZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lw9-tA-B7o"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xMD-lR-QKO"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -74,7 +79,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="-41"/>
+            <point key="canvasLocation" x="-312" y="-127"/>
+        </scene>
+        <!--Dog Detail View Controller-->
+        <scene sceneID="7BJ-XR-rhS">
+            <objects>
+                <viewController id="ONf-na-gDM" customClass="DogDetailViewController" customModule="TableViewFunS2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tit-tF-3Ss">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IAJ-HH-fr1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iea-E5-5sl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKg-3w-eGC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="-135"/>
         </scene>
     </scenes>
 </document>
