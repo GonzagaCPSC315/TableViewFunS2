@@ -15,32 +15,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pvO-LK-PiN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pvO-LK-PiN">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DogCell" id="eGr-vg-C1p" customClass="DogTableViewCell" customModule="TableViewFunS2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="51"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGr-vg-C1p" id="CPr-xL-MZg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iea-VO-r7X">
-                                                    <rect key="frame" x="24" y="15" width="366" height="21"/>
+                                                    <rect key="frame" x="24" y="15" width="366" height="45"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cp-lR-kX1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="178" height="21"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="115.5" height="45"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5R-U9-l3c">
-                                                            <rect key="frame" x="188" y="0.0" width="178" height="21"/>
+                                                            <rect key="frame" x="125.5" y="0.0" width="115" height="45"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n0p-jC-2Qy">
+                                                            <rect key="frame" x="250.5" y="0.0" width="115.5" height="45"/>
+                                                        </imageView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
@@ -53,6 +56,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="breedLabel" destination="y5R-U9-l3c" id="I2M-Pl-EzN"/>
+                                            <outlet property="dogImageView" destination="n0p-jC-2Qy" id="fCn-1J-X7Q"/>
                                             <outlet property="nameLabel" destination="5cp-lR-kX1" id="Sxc-Ww-MkX"/>
                                             <segue destination="ONf-na-gDM" kind="show" identifier="DetailSegue" id="Q9G-0K-MWZ"/>
                                         </connections>
@@ -102,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rxr-1d-87o">
-                                <rect key="frame" x="16" y="104" width="382" height="78"/>
+                                <rect key="frame" x="16" y="104" width="382" height="742"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tqT-dQ-fCR">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
@@ -116,7 +120,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hMl-Xw-t26">
                                                 <rect key="frame" x="64.5" y="0.0" width="317.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -132,10 +136,13 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-9O-Unb">
                                                 <rect key="frame" x="64.5" y="0.0" width="317.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4wj-8J-CWT">
+                                        <rect key="frame" x="0.0" y="88" width="382" height="654"/>
+                                    </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -144,6 +151,7 @@
                             <constraint firstItem="rxr-1d-87o" firstAttribute="leading" secondItem="IAJ-HH-fr1" secondAttribute="leading" constant="16" id="1QV-iS-fBQ"/>
                             <constraint firstItem="IAJ-HH-fr1" firstAttribute="trailing" secondItem="rxr-1d-87o" secondAttribute="trailing" constant="16" id="9Gv-o4-Gch"/>
                             <constraint firstItem="rxr-1d-87o" firstAttribute="top" secondItem="IAJ-HH-fr1" secondAttribute="top" constant="16" id="pbs-2X-147"/>
+                            <constraint firstItem="IAJ-HH-fr1" firstAttribute="bottom" secondItem="rxr-1d-87o" secondAttribute="bottom" constant="16" id="smh-2g-p14"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IAJ-HH-fr1"/>
                     </view>
@@ -156,6 +164,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="breedTextField" destination="KFH-9O-Unb" id="Qbx-0g-fQe"/>
+                        <outlet property="dogImageView" destination="4wj-8J-CWT" id="qtH-1z-gSw"/>
                         <outlet property="nameTextField" destination="hMl-Xw-t26" id="bfj-uC-XJ3"/>
                     </connections>
                 </viewController>
