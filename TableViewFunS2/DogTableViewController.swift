@@ -65,6 +65,19 @@ class DogTableViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let dog = dogs.remove(at: sourceIndexPath.row)
+        dogs.insert(dog, at: destinationIndexPath.row)
+        
+        tableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        dogs.remove(at: indexPath.row)
+        
+        tableView.deleteRows(at: [indexPath], with: .fade)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == "DetailSegue" {
@@ -104,6 +117,11 @@ class DogTableViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
             }
         }
+    }
+    
+    @IBAction func editButtonPressed(_ sender: UIBarButtonItem) {
+        let newEditingMode = !tableView.isEditing
+        tableView.setEditing(newEditingMode, animated: true)
     }
 
 }
